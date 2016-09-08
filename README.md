@@ -1,6 +1,6 @@
-## piqt-web
+## PIAX Web Site
 
-This repository includes source files for [PIQT](http://piqt.org) site.
+This repository includes source files for PIAX site.
 
 ### Site HTML generation
 
