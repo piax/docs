@@ -2,24 +2,35 @@
 layout: default
 title: PIAX distributed computing middleware
 ---
+<table><tr><td>
 <div class="banner"><img width="100" src="piax-font.png"></div>
 <div class="banner_bottom">[piǽks / piʌf]</div>
+</td><td>
+{% highlight java %}
+Peer p = Peer.getInstance(PeerId.newId());
+// Create a P2P instance on 10.0.0.2
+Suzaku<StringKey, StringKey> t = 
+ new Suzaku<StringKey, StringKey>(
+  p.newBaseChannelTransport(
+   new TcpLocator(
+    new InetSocketAddress("10.0.0.2", 12368))));
+// Join to P2P via introducer 10.0.0.1
+t.join(
+ new TcpLocator(
+  new InetSocketAddress("10.0.0.1", 12368)));
+// Send "world" to peers that have key "hello"
+t.send(new StringKey("hello"), "world");
+t.leave();
+p.fin();
+{% endhighlight %}
+</td>
+</tr></table>
 
 PIAX (P2P Interactive Agent eXtensions) is a framework for distributed
 computing.
 
 
-````java
-Peer p = Peer.getInstance(PeerId.newId());
-Suzaku<StringKey, StringKey> t = new Suzaku<StringKey, StringKey>(
- p.newBaseChannelTransport(new TcpLocator(new InetSocketAddress("10.0.0.2", 12368))));
-// Join to P2P via introducer 10.0.0.1
-t.join(new TcpLocator(new InetSocketAddress("10.0.0.1", 12368)));
-// Send "world" to peer that has key "hello".
-t.send(new StringKey("hello"), "world");
-t.leave();
-p.fin();
-````
+
 
 
 ## News
