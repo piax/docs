@@ -1,0 +1,25 @@
+---
+---
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>{{ title }}</title>
+		{% include css.html %}
+	</head>
+	<body>
+		<div id="wrapper">
+			<main>
+			  <div id="content">
+                            <div class="innertube">
+                              {{ content }}
+                            </div>
+{% include copyright.html %}
+                          </div>
+			</main>
+			
+{% include sidebar.html %}
+
+		</div>
+	</body>
+</html>

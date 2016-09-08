@@ -1,0 +1,11 @@
+@inproceedings{stla,
+ author = {Yuuichi Teranishi},
+ title = {{PIAX: Toward a Framework for Sensor Overlay Network}},
+ booktitle = {Proceedings of 6th IEEE Consumer Communications and Networking Conference 2009 (CCNC 2009) },
+ year = {2009},
+ month = Jan,
+ pages = {1 - 5},
+ location = {Las Vegas, USA},
+ doi = {},
+ publisher = {IEEE},
+}
