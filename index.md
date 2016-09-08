@@ -8,6 +8,20 @@ title: PIAX distributed computing middleware
 PIAX (P2P Interactive Agent eXtensions) is a framework for distributed
 computing.
 
+
+````java
+Peer p = Peer.getInstance(PeerId.newId());
+Suzaku<StringKey, StringKey> t = new Suzaku<StringKey, StringKey>(
+ p.newBaseChannelTransport(new TcpLocator(new InetSocketAddress("10.0.0.2", 12368))));
+// Join to P2P via introducer 10.0.0.1
+t.join(new TcpLocator(new InetSocketAddress("10.0.0.1", 12368)));
+// Send "world" to peer that has key "hello".
+t.send(new StringKey("hello"), "world");
+t.leave();
+p.fin();
+````
+
+
 ## News
 
 * 2016/09/01 [PIAX GitHub](https://github.com/piax/piax) is now available
