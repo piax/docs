@@ -8,16 +8,16 @@ title: PIAX distributed computing middleware
 </td><td>
 {% highlight java %}
 Peer p = Peer.getInstance(PeerId.newId());
-// Create a P2P instance on 10.0.0.2
+// Create a P2P instance on 10.0.0.2:12367
 Suzaku<StringKey, StringKey> t = 
  new Suzaku<StringKey, StringKey>(
   p.newBaseChannelTransport(
    new TcpLocator(
-    new InetSocketAddress("10.0.0.2", 12368))));
-// Join to P2P via introducer 10.0.0.1
+    new InetSocketAddress("10.0.0.2", 12367))));
+// Join to P2P via introducer 10.0.0.1:12367
 t.join(
  new TcpLocator(
-  new InetSocketAddress("10.0.0.1", 12368)));
+  new InetSocketAddress("10.0.0.1", 12367)));
 // Send "world" to peers that have key "hello"
 t.send(new StringKey("hello"), "world");
 t.leave();
