@@ -7,8 +7,10 @@ title: PIAX distributed computing middleware
 <div class="banner_bottom">[piǽks / piʌf]</div>
 </td><td>
 {% highlight java %}
+// Create a peer instance
 Peer p = Peer.getInstance(PeerId.newId());
-// Create a P2P instance on 10.0.0.2:12367
+// Create a P2P transport (Suzaku algorithm)
+// with string keys on 10.0.0.2:12367
 Suzaku<StringKey, StringKey> t = 
  new Suzaku<StringKey, StringKey>(
   p.newBaseChannelTransport(
@@ -20,18 +22,12 @@ t.join(
   new InetSocketAddress("10.0.0.1", 12367)));
 // Send "world" to peers that have key "hello"
 t.send(new StringKey("hello"), "world");
+// Leave the P2P
 t.leave();
 p.fin();
 {% endhighlight %}
 </td>
 </tr></table>
-
-PIAX (P2P Interactive Agent eXtensions) is a framework for distributed
-computing.
-
-
-
-
 
 ## News
 
@@ -43,6 +39,8 @@ computing.
 
 ## What is PIAX?
 
+PIAX (P2P Interactive Agent eXtensions) is a framework for distributed
+computing.
 PIAX has two major features: One is a transport framework based on P2P
 structured overlay. The other is a distributed computing framework
 with mobile agents.
