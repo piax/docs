@@ -2,9 +2,12 @@
 layout: default
 title: PIAX distributed computing middleware
 ---
-<table><tr><td>
-<div class="banner"><img width="100" src="piax-font.png"></div>
-<div class="banner_bottom">[piǽks / piʌf]</div>
+<table><tr><td width="400">
+<div class="banner"><img width="100" src="piax-font.png"><br>
+<span class="banner_bottom">[piǽks / piʌf]</span><br><br><br>
+<a class="button" href="download.html">Download</a>
+<a class="button" href="https://github.com/piax/piax">View GitHub</a>
+</div>
 </td><td>
 {% highlight java %}
 // Create a peer instance
