@@ -14,14 +14,11 @@ title: PIAX distributed computing middleware
 Peer p = Peer.getInstance(PeerId.newId());
 // Create a P2P transport (Suzaku algorithm)
 // with string keys on 10.0.0.2:12367
-Suzaku<StringKey, StringKey> t = 
- new Suzaku<StringKey, StringKey>(
-  p.newBaseChannelTransport(
-   new TcpLocator(
+Suzaku<StringKey, StringKey> t = new Suzaku<>(
+  p.newBaseChannelTransport(new TcpLocator(
     new InetSocketAddress("10.0.0.2", 12367))));
 // Join to P2P via introducer 10.0.0.1:12367
-t.join(
- new TcpLocator(
+t.join(new TcpLocator(
   new InetSocketAddress("10.0.0.1", 12367)));
 // Send "world" to peers that have key "hello"
 t.send(new StringKey("hello"), "world");
