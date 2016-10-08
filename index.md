@@ -31,6 +31,7 @@ p.fin();
 
 ## News
 
+* 2016/10/07 [PIAX 3.1.0](https://sourceforge.net/p/piax/news/2016/10/piax-310-is-released/) is released
 * 2016/09/01 [PIAX GitHub](https://github.com/piax/piax) is now available
 * 2015/06/08 PIAX 3.0.0 is released
 * 2009/10/21 PIAX 2.1.0 release
