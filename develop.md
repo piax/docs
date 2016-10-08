@@ -6,7 +6,7 @@ layout: default
 
 ### License
 PIAX is a copyrighted free software by PIAX development team. You can redistribute it and/or modify it under either the terms of the
-AGPLv3 (See the file AGPL) or PIAX binary code license. The PIAX binary code license permits to modify the part of PIAX software and distribute in binary code. To obtain PIAX binary code license, you must contact PIAX development team (steering at piax.org).
+AGPLv3 (See the file AGPL) or PIAX binary code license. The PIAX binary code license permits to modify the part of PIAX software and distribute in binary code. To obtain PIAX binary code license, you must contact PIAX development team (steering at piax.org). An example of PIAX binary code license is [here](https://github.com/piax/piax.github.io/blob/master/BINARY-LICENSE).
 
 
 ### Developers
