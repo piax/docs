@@ -5,7 +5,7 @@ layout: default
 ## Developments
 
 ### License
-PIAX is a copyrighted free software by PIAX development team. You can redistribute it and/or modify it under either the terms of the
+PIAX is a copyrighted free software by [PIAX development team](developers.html). You can redistribute it and/or modify it under either the terms of the
 [AGPLv3](https://www.gnu.org/licenses/agpl-3.0.html) or [PIAX binary code license](pbcl.html). The PIAX binary code license permits to modify the part of PIAX software and distribute in binary code.
 
 ### Developers
