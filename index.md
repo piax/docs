@@ -59,7 +59,7 @@ in addition to conventional locators (such as IP addresses and
 Bluetooth MAC addresses). 
 
 As P2P overlay networks, there are implementations of [Skip Graph](http://dl.acm.org/citation.cfm?id=1290674),
-Suzaku, LLNet, DOLR and Flooding to support various kinds
+bi-directional Chord#, LLNet, DOLR and Flooding to support various kinds
 of discoveries.  The structured overlays of PIAX are implemented as
 a scalable and fault-tolerant system using [DDLL](http://ieeexplore.ieee.org/document/7328521/), which is a distributed
 algorithm for constructing distributed doubly-linked lists. DDLL
